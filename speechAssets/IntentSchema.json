@@ -1,0 +1,22 @@
+{
+    "intents": [
+        {
+            "intent": "GetTickerIntent",
+            "slots": [
+                {
+                    "name": "Company",
+                    "type": "PUBLIC_COMPANIES"
+                }
+            ]
+        },
+        {
+          "intent": "AMAZON.HelpIntent"
+        },
+        {
+          "intent": "AMAZON.StopIntent"
+        },
+        {
+          "intent": "AMAZON.CancelIntent"
+        }
+    ]
+}

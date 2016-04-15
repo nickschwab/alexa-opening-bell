@@ -1,0 +1,12 @@
+GetTickerIntent the price of {Company}
+GetTickerIntent the price of {Company} stock
+GetTickerIntent the share price of {Company} stock
+GetTickerIntent the share price of {Company}
+GetTickerIntent the stock price of {Company}
+GetTickerIntent the performance of {Company}
+GetTickerIntent the market performance of {Company}
+GetTickerIntent {Company} stock
+GetTickerIntent {Company} stock price
+GetTickerIntent {Company} shares
+GetTickerIntent {Company} share price
+GetTickerIntent {Company}
