@@ -8,7 +8,7 @@
  */
 
 var APP_ID = "";
-var APP_NAME = "Market Master";
+var APP_NAME = "Opening Bell";
 
 var MOD_BASE_URL = "http://dev.markitondemand.com/MODApis/Api/v2";
 
@@ -53,11 +53,15 @@ MyApp.prototype.intentHandlers = {
     "GetTickerIntent": function (intent, session, response) {
         var inputSlot = intent.slots.Company;
         console.log(inputSlot);
-        handleTickerRequest((inputSlot && inputSlot.value ? inputSlot.value : null), response);
+        if(!inputSlot.value){
+            response.ask("I didn't quite hear that. What company would you like me to look up?");
+        }else{
+            handleTickerRequest((inputSlot && inputSlot.value ? inputSlot.value : null), response);
+        }
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        response.ask("I can tell you the stock price of any publicly traded company such as Apple, Google, Amazon, and many more. Which would you like?");
+        response.ask("I can tell you the stock price of any publicly traded company such as Apple, Tesla, Microsoft, and many more. Which would you like?");
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
