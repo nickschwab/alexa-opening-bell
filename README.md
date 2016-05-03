@@ -8,3 +8,5 @@
 
 # Misc
 For a guide on how to create your own copy of Opening Bell, see the project page on [Amazon's Hackster Competition](https://www.hackster.io/nickschwab/opening-bell-c3a46e)
+
+![Opening Bell Logo](https://raw.githubusercontent.com/nickschwab/alexa-opening-bell/master/logo/large_512x512.png)
